@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 
-header{
+header .cabesalho{
     background: rgb(195,34,178);
     background: linear-gradient(0deg, rgba(195,34,178,1) 0%, rgba(146,45,253,1) 100%);
     display: flex;
@@ -18,6 +18,9 @@ header{
 
 
    
+}
+.cabesalho{
+    display: block;
 }
 .logo{
     color: aliceblue;
@@ -33,14 +36,22 @@ header{
     
 }
 
-.lupa{
+.barra{
      width: 900px;
      height: 50px;
 }
 
-ion-icon{
+.cart{
+       color: white;
+       height: 40px;
+       width: 40px;
+
+}
+
+.lupa{
     color: rgb(0, 0, 65);
     height: 40px;
     width: 40px;
     background: linear-gradient(0deg, rgb(63, 34, 195) 0%, rgb(140, 0, 255) 100%);
     
+}
