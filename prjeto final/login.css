@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#login header {
+    position: relative;
+    background: linear-gradient(0deg, rgba(195,34,178,1) 0%, rgba(146,45,253,1) 100%);
+    min-height: 120px;
+}
+
+#login .logo {
+    color: #ffffff;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+#login nav {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-25%, -50%);
+}
+#login nav li {
+    list-style: none;
+}
+#login nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
