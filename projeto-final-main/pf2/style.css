@@ -1,0 +1,71 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0%
+}
+
+#site_principal{
+    display: grid;
+    grid-template-areas: 
+    'cc cc cc '
+    'nn nn nn'
+    'mm mm mm'
+    'mm mm mm'
+    'ff ff ff';
+
+
+}
+
+.cabesalho{
+    grid-area: cc;
+    background-color: blue;
+
+}
+
+.navegador{
+    grid-area: nn;
+    background-color: rgb(60, 255, 0);
+
+}
+
+.corpo{
+    grid-area: mm;
+    background-color: rgb(255, 0, 221);
+    height: 70vh;
+}
+
+.rodapé{
+   grid-area: ff;
+   background-color: blue;
+
+}
+header{
+    /* comfiguracoes do header  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.busca{
+    background: url(imagens/lupabranca.png)  no-repeat center left;
+    padding: 5px;
+    
+    width: 10px;
+    transition: all 0.5s linear;
+ -webkit-transition:all 0.5s linear ;
+    
+  
+}
+.busca:focus{
+
+    background-color: white;
+   width: 500px;
+   height: 50px;
+   outline:none;
+   border-bottom: solid 1px #1b169f;
+}
+input::placeholder {
+    color: #0B48BA;
+  }

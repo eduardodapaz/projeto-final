@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------GRID--------------------------------------*/
+#login body {
+    display: grid;
+        grid-template-areas: 
+            "cab cab cab"
+            "pri pri pri";
+        grid-gap: 0px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 150px auto;
+}
+#login header{
+    grid-area: cab;
+}
+#login main{
+    grid-area: pri;
+}
+/*--------------------------------------GRID--------------------------------------*/
+
+/*--------------------------------------HEADER--------------------------------------*/
+#login header {
+    min-height: 150px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(195,34,178,1) 0%, rgba(146,45,253,1) 100%);
+}
+
+#login .elemento_pai {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#login .card {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login .logohead {
+    position: absolute;
+    height: 145px;
+}
+/*--------------------------------------HEADER--------------------------------------*/
+
+
+#login main {
+    background-color: red;
+}
+#login .porra {
+    background-color: #fc7703;
+}
+#login .form-header {
+    background-color: yellow;
+}
