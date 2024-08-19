@@ -104,6 +104,11 @@ width: 30px;
       
 }
 
+.links a{
+
+    color: black
+}
+
 main img{
     /* aqui  comfigurase as imagems dos produtos */
     box-sizing: border-box;
