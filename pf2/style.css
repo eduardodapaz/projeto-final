@@ -1,7 +1,8 @@
 *{
 box-sizing: border-box;
 margin: 0;
-padding: 0%
+padding: 0%;
+text-decoration: none;
 }
 
 #site_principal{
@@ -18,46 +19,63 @@ padding: 0%
 
 .cabesalho{
     grid-area: cc;
-    background-color: blue;
+    background: rgb(145,34,195);
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
 
 }
 
 .navegador{
     grid-area: nn;
-    background-color: rgb(60, 255, 0);
+    
 
 }
 
 .corpo{
     grid-area: mm;
-    background-color: rgb(255, 0, 221);
+    
     height: 70vh;
 }
 
 .rodapé{
    grid-area: ff;
-   background-color: blue;
+ 
 
 }
 header{
     /* comfiguracoes do header  */
     display: flex;
     align-items: center;
-    justify-content: center;
+   
     text-align: center;
+    
+}
+.icon{
+
+
+height: 30px;
+width: 30px;
+}
+.logo{
+    height: 60px;
     
 }
 
 .busca{
     background: url(imagens/lupabranca.png)  no-repeat center left;
     padding: 5px;
-    
-    width: 10px;
+    height: 30px;
+    background-size: 20px;
+    width: 30px;
     transition: all 0.5s linear;
- -webkit-transition:all 0.5s linear ;
+    -webkit-transition:all 0.5s linear ;
+    border: none;
+    
     
   
 }
+.busca:focus:-ms-input-placeholder {  
+    color: transparent;  
+ }
 .busca:focus{
 
     background-color: white;
@@ -66,6 +84,81 @@ header{
    outline:none;
    border-bottom: solid 1px #1b169f;
 }
-input::placeholder {
-    color: #0B48BA;
+
+.navegador ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    list-style: none;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+.links img{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(255, 254, 252);
+        border-radius: 50%;
+        margin: 30px;
+        box-shadow: 3px 3px 3px #444444;
+      
+}
+
+main img{
+    /* aqui  comfigurase as imagems dos produtos */
+    box-sizing: border-box;
+    height: 200px;
+    width: 250px;
+}
+
+main section{ 
+    display: flex;
+      justify-content: space-around; 
   }
+
+section{ 
+  display: flex;
+    justify-content: space-around; 
+}
+.filho{
+    display:flexbox;
+    background-color: rgb(236, 248, 253);
+    width: 300px;
+    height: 360px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px gray;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    
+}
+
+.filho div {
+    display: flex;
+    flex-direction: column;
+}
+
+.filho button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fdfeff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #444444;
+}
+.titulomain {
+    margin-top: 4%;
+    font-size: 200%;
+    font-weight: bolder;
+    margin-right: 200px;
+}
+.filho button:hover {
+    background-color: #444444;
+    color: azure;
+}
+
