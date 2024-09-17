@@ -7,47 +7,15 @@
     text-decoration: none;
 }
 
-body{
-    display: grid;
-    grid-template-areas:
-    "cc cc cc cc cc "
-    "ss ss ss ss ss " 
-    "nn nn nn nn nn"
-    "mm mm mm mm mm"
-    "mm mm mm mm mm"
-    "ff ff ff ff ff"
-    ;
-}
-
-.slider{
-     grid-area: ss;
-}
-
-
-.corpo{
-    grid-area: mm;
-}
-
-header .cabecalho{
+header{
     background: rgb(195,34,178);
     background: linear-gradient(0deg, rgba(195,34,178,1) 0%, rgba(146,45,253,1) 100%);
     display: flex;
    min-height: 120px;
    align-items: center;
-   grid-area: cc ;
- 
-}
-footer{
-    grid-area: ff;
+  
 }
 
-.navegador{
-
-    grid-area: nn;
-}
-.cabesalho{
-    display: block;
-}
 .logo{
     color: aliceblue;
     min-height: 60px;
@@ -62,19 +30,12 @@ footer{
     
 }
 
-.barra{
+.lupa{
      width: 900px;
      height: 50px;
 }
 
-.cart{
-       color: white;
-       height: 40px;
-       width: 40px;
-
-}
-
-.lupa{
+ion-icon{
     color: rgb(0, 0, 65);
     height: 40px;
     width: 40px;
