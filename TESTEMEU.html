@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TITLE </title>
+</head>
+<body>
+    <form action= "">
+        <h1>nome</h1>
+        <input type="text" id="nome" name="nome_aluno" placeholder="digite seu nome">
+        <h1> data de nascimento</h1>
+        <input type="date" name="data_nasc" placeholder="digite sua idade">
+        <h1>cgm</h1>
+        <input type="text" name="cgm" id="cgm_aluno" placeholder="digite seu cgm">
+    </form>
+
+
+    <script>
+        function dados_aluno (){
+            const no_al = documentgetElementById('nome_aluno').value;
+            const dn_al = documentgetElementById('data_nasc').value;
+            const cg_al = documentgetElementById('cgm').value;
+
+            documentgetElementById ('mostra_nome').innerText= no_al;
+            documentgetElementById ('data_nasc').innerText= dn_al;
+            documentgetElementById ('cgm').innerText= cg_al;
+        }
+    </script>
+</body>
+</html>
+
