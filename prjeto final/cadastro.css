@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1b1b1b;
+    background: #d8d8d8;
     
 }
 
@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(100, 88, 155, 0.438);
     padding: 5rem;
     border-radius: 30px;
 }
