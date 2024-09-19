@@ -95,12 +95,13 @@ width: 30px;
 
 }
 .links img{
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         background-color: rgb(255, 254, 252);
         border-radius: 50%;
         margin: 30px;
         box-shadow: 3px 3px 3px #444444;
+        filter: grayscale(100%);
       
 }
 
@@ -124,16 +125,16 @@ main section{
 section{ 
   display: flex;
     justify-content: space-around; 
+    background-color: rgb(223, 223, 223);
 }
 .filho{
     display:flexbox;
-    background-color: rgb(236, 248, 253);
+    background-color: rgb(223, 223, 223);
     width: 300px;
     height: 360px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 5px gray;
     margin-top: 5%;
     flex-wrap: wrap;
     
@@ -167,3 +168,6 @@ section{
     color: azure;
 }
 
+.links img:hover {
+    filter: invert(100%);
+   }
