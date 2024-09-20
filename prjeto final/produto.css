@@ -1,3 +1,66 @@
+.cabesalho{
+    grid-area: cc;
+    background: rgb(145,34,195);
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+
+}
+
+.navegador{
+    grid-area: nn;
+    
+
+}
+
+.corpo{
+    grid-area: mm;
+    
+    height: 70vh;
+}
+
+.rodapé{
+   grid-area: ff;
+ 
+
+}
+header{
+    display: flex;
+    align-items: center;   
+    text-align: center;
+    
+}
+.icon{
+height: 40px;
+width: 40px;
+}
+.logo{
+    height: 80px;
+    
+}
+
+.busca{
+    background: url(imagens/lupabranca.png)  no-repeat center left;
+    padding: 5px;
+    height: 40px;
+    background-size: 20px;
+    width: 40px;
+    transition: all 0.5s linear;
+    -webkit-transition:all 0.5s linear ;
+    border: none;
+    
+    
+  
+}
+.busca:focus:-ms-input-placeholder {  
+    color: transparent;  
+ }
+.busca:focus{
+
+    background-color: white;
+   width: 500px;
+   height: 50px;
+   outline:none;
+   border-bottom: solid 1px #1b169f;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,15 +68,6 @@
     font-family: Courier New;
     list-style: none;
     text-decoration: none;
-}
-
-header{
-    background: rgb(195,34,178);
-    background: linear-gradient(0deg, rgba(195,34,178,1) 0%, rgba(146,45,253,1) 100%);
-    display: flex;
-   min-height: 120px;
-   align-items: center;
-  
 }
 
 .logo{
@@ -82,8 +136,11 @@ ion-icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin-left: 60%;
+}
+.imagempro{
+    margin-left: 100%;
+
 }
 
 .titulopro {
@@ -162,3 +219,17 @@ ion-icon{
     padding-right: 15px;
     cursor: pointer;
 }
+    
+    #site_principal{
+        display: grid;
+        grid-template-areas: 
+        'cc cc cc '
+        'nn nn nn'
+        'mm mm mm'
+        'mm mm mm'
+        'ff ff ff';
+    
+    
+}
+    
+    
