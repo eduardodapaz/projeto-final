@@ -43,13 +43,11 @@ ion-icon{
     
 }
 
-/*gktnerlçjnerjonejkgtkohfgçklhksogmkdfspogkdfspoghjpgpkfggpfgkgfgpohfgdphogfkpodgkgpdghkfbplkfphogkhpkhçkhgfpo*/
-
-#produtofnaf main {
+#produto main {
     text-align: center;
 }
 
-#produtofnaf .elemento_pai {
+#produto .elemento_pai {
     width: fit-content;
     margin-right: 4.5%;
     margin-left: 4.5%;
@@ -58,29 +56,25 @@ ion-icon{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /*border: #f00000 solid;*/
 }
-#produtofnaf .elemento_pai2 {
+#produto .elemento_pai2 {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 0.4%;
-    /*border: #f00000 solid;*/
 }
-#produtofnaf .elemento_pai3 {
+#produto .elemento_pai3 {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 4%;
-    /*border: #f00000 solid;*/
 }
 
-#produtofnaf .card {
+#produto .card {
     width: fit-content;
     height: fit-content;
-    /*border: #00fff0 solid;*/
 }
-#produtofnaf .card img {
+#produto .card img {
     width: 300px;
 }
 
@@ -90,11 +84,7 @@ ion-icon{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /*border: #00f000 solid;*/
 }
-/*.infoladopro p {
-    border: #0000f0 solid;
-} */
 
 .titulopro {
     font-weight: bold;
@@ -113,7 +103,7 @@ ion-icon{
 }
 
 .estoque {
-    color: #d9671c;
+    color: #ff0000;
 }
 
 .especificacoes {
@@ -146,12 +136,12 @@ ion-icon{
     margin-top: 2%;
 }
 
-#produtofnaf .elemento_pai2 button {
+#produto .elemento_pai2 button {
     font-family: 'REM', sans-serif;
     color: #ffffff;
     font-size: 200%;
-    background-color: #92450D;
-    border: #92450D solid;
+    background-color: #000000;
+    border: #000000 solid;
     border-radius: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -159,7 +149,7 @@ ion-icon{
     padding-right: 15px;
     cursor: pointer;
 }
-#produtofnaf button {
+#produto button {
     font-family: 'REM', sans-serif;
     color: #ffffff;
     font-size: 200%;
