@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+}
+
 .cabesalho{
     grid-area: cc;
     background: rgb(145,34,195);
@@ -32,7 +39,7 @@ header{
 height: 40px;
 width: 40px;
 }
-.logo{
+.logopro{
     height: 80px;
     
 }
@@ -61,15 +68,6 @@ width: 40px;
    outline:none;
    border-bottom: solid 1px #1b169f;
 }
-*{
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    font-family: Courier New;
-    list-style: none;
-    text-decoration: none;
-}
-
 .logo{
     color: aliceblue;
     min-height: 60px;
@@ -136,10 +134,12 @@ ion-icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60%;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .imagempro{
-    margin-left: 100%;
 
 }
 
@@ -219,17 +219,3 @@ ion-icon{
     padding-right: 15px;
     cursor: pointer;
 }
-    
-    #site_principal{
-        display: grid;
-        grid-template-areas: 
-        'cc cc cc '
-        'nn nn nn'
-        'mm mm mm'
-        'mm mm mm'
-        'ff ff ff';
-    
-    
-}
-    
-    
