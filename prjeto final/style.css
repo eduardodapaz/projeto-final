@@ -3,6 +3,7 @@ box-sizing: border-box;
 margin: 0;
 padding: 0%;
 text-decoration: none;
+
 }
 
 #site_principal{
@@ -156,12 +157,17 @@ section{
     font-weight: 600;
     color: #444444;
 }
-.titulomain {
-    margin-top: 4%;
-    font-size: 200%;
-    font-weight: bolder;
-    margin-right: 200px;
-}
+.titulo_main{
+   
+      
+        margin-top: 4%;
+        font-size: 200%;
+        font-weight: bolder;
+        margin-right: 200px;
+        text-align: center;
+    }
+      
+
 .filho button:hover {
     background-color: #444444;
     color: azure;
