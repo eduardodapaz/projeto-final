@@ -10,13 +10,13 @@ header {
 }
 
 main {
-    background-color: #212121;
+    background-color: #171717;
     height: 100vh;
     position: relative;
 }
 
 .bloco {
-    background-color: #1f1f1f;
+    background-color: #2b2b2b;
     width: fit-content;
     padding: 30px;
     padding-top: 80px;
@@ -25,6 +25,8 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 40px;
 }
 
 .blocodois {
@@ -34,7 +36,24 @@ main {
     flex-direction: column;
 }
 .blocodois h1 {
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Gabriel Serif', sans-serif;
+    margin-bottom: 30px;
+}
+.blocodois a {
+    color: white;
+}
+.blocodois button {
+    font-family: "Kay Pho Du", serif;
+    font-size: 23px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
 }
 
 .textfield {
@@ -45,6 +64,7 @@ main {
     margin: 10px;
 }
 .textfield label {
+    font-family: "Kay Pho Du", serif;
     font-size: 25px;
     margin-bottom: 10px;
 }
@@ -52,14 +72,11 @@ main {
     box-sizing: border-box;
     padding: 15px;
     width: 350px;
+    border-radius: 15px;
+    border: none;
 }
 
-.blocodois button {
-    font-size: 23px;
-    padding: 10px;
-    margin: 10px;
-    margin-top: 20px;
-}
+
 
 footer {
     background-color: blueviolet;
