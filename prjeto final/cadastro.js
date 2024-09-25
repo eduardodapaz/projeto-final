@@ -21,10 +21,3 @@ function cadastro_cliente(){
 }
 
 alert ('oi')
-
-
-
-function postar_produto(){
-            
-
-}
