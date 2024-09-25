@@ -6,7 +6,28 @@
     <link rel="stylesheet" href="style.css">
     <title>cadastrar produto</title>
 </head>
-<body>
+<body id="cp">
+    <div class="cadastre-produto">
+        <form action="">
+            <div class="nome">
+                <input type="text" placeholder="nome produto">
+            </div>
+            <div class="descricao">
+                <input type="text" name=""placeholder="descrião">
+            </div>
+            <div class="preco">
+                <input type="text" placeholder="preço do produto">
+            </div>
+            <div class="imagemdoproduto">
+                <label for="imagem">foto produto </label>
+            <input type="file" name="imagem">
     
+            </div>
+            <button onclick="postar_produto()"> enviar</button>
+    
+        </form>
+    </div>
+    
+    <script src="cadastro.js"></script>
 </body>
 </html>
