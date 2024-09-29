@@ -1,5 +1,3 @@
-
-
 function cadastro_cliente(){
     const nome_client = document.getElementById ('firstname').value;
     const ultimonome_client = document.getElementById ('lastname').value;
@@ -22,24 +20,4 @@ function cadastro_cliente(){
 
 }
 
-
-function postar_produto(){
-    alert('eeeeeeeee')
-
-    const novo_produto = document.getElementById ('nomeProduto').value;
-    const preco_produto = document.getElementById ('precoProduto').value;
-    const dec_produto = document.getElementById ('descricao').value;
-
-    let tabela = ' 
-    <tr>${novo_produto}</tr>;
-    <tr>${preco_produto}</tr>;
-    <tr>${dec_produto}</tr>; 
-    ';
-
-    document.getElementById('tabela_produto').innerHTML=tabela
-    
-        
-        
-       
-    
-}
+alert ('oi')
