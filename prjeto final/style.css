@@ -172,4 +172,33 @@ section{
     background-color: #444444;
     color: azure;
 }
+/*-----------------------------------------*/
 
+#cp{
+    background-color: rgba(0, 0, 0, 0.418);
+    font-family: 'Gabriel Serif', sans-serif;
+}
+
+.postarproduto{
+    border: #444444 1px solid;
+}
+
+#cp input {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 350px;
+    border-radius: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px ;
+    color: #ffff;
+}
+#cp table{
+    background-color: antiquewhite;
+    border: #444444 1px solid;
+}
+#cp  th{
+    border: #444444 1px solid;
+}

@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>cadastrar produto</title>
 </head>
-<body id="cp">
-    <div class="cadastre-produto">
-        <form action="">
-            <div class="nome">
-                <input type="text" placeholder="nome produto">
-            </div>
-            <div class="descricao">
-                <input type="text" name=""placeholder="descrião">
-            </div>
-            <div class="preco">
-                <input type="text" placeholder="preço do produto">
-            </div>
-            <div class="imagemdoproduto">
-                <label for="imagem">foto produto </label>
-            <input type="file" name="imagem">
-    
-            </div>
-            <button onclick="postar_produto()"> enviar</button>
-    
-        </form>
-    </div>
-    
+<body id="cp">  
+
+   <div class="postarproduto">
+    <h1 class="tituloproduto">Novo Produto</h1>
+    <form id="novo_produto">
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" name="nomeProduto"><br><br> 
+
+        <label for="precoProduto">Preço do Produto:</label>
+        <input type="number" id="precoProduto" name="precoProduto"><br><br>
+
+        <label for="descproduto">descriçao do Produto:</label>
+        <input type="text" id="descricao" name="descproduto"><br><br>
+
+        <button type="button" onclick="postar_produto()">Cadastrar Produto</button>
+    </form>
+
+   </div>
+
+   <table >
+        <thead>
+            <tr>
+                <th>produto</th>
+                <th>preço</th>
+                <th>descriçao</th>
+            </tr>
+
+        </thead>
+       <tbody class="tabela_produto">
+      
+       </tbody>
+   </table>
+
     <script src="cadastro.js"></script>
 </body>
 </html>
