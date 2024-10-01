@@ -4,9 +4,13 @@
 }
 
 header {
-    background-color: blueviolet;
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
     height: 120px;
     text-align: center;
+}
+
+header img {
+    height: 125px;
 }
 
 main {
@@ -79,7 +83,7 @@ main {
 
 
 footer {
-    background-color: blueviolet;
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
     height: 120px;
     text-align: center;
 }
