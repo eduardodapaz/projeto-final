@@ -1,192 +1,86 @@
-/*css do formulário*/
-
-/*fonte baixada pelo google fonts*/
-@import url('https://fonts.googleapis.com/css2?family= Montserrat & display=swap') ;
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    padding: 0;
 }
 
-/* largura, altura, permissão para deixar os containers maleaveis, centralização e cor do fundo*/
-body {
-    width: 100%;
+header {
+    background-color: blueviolet;
+    height: 120px;
+    text-align: center;
+}
+
+main {
+    background-color: #171717;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #d8d8d8;
-    
+    position: relative;
 }
 
-
-/*tamanho, flexilizaçao, ordem em colunas, centralizaçao, cor do fundo e distancia do elemento e borda*/
-.form {
-    width: 50%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(100, 88, 155, 0.438);
-    padding: 5rem;
-    border-radius: 30px;
-}
-
-/*ediçao na parte do header: margem de baixo, flexilizaçao e espaçamento*/
-.form-header {
-    margin-bottom: 4rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.login-button {
-    display: flex;
-    align-items: center;
-}
-
-/*ediçao do botao de login: cor de fundo, espaçamento entre os elementos, tamanho d borda, e mudanla de cursor*/
-.login-button button {
-    border: none;
-    background-color: rgba(104,54,205,255);
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/*mudar a cor do botao quando o cursor passar por cima*/
-.login-button button:hover {
-    background-color: rgba(107,83,233,255);
-}
-
-/*ediçao do texto de dentro do botao*/
-.login-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: rgba(233,207,0,255);
-}
-
-/*risquinho embaixo do "cadastre-se*/ 
-.form-header h1::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #e7ce5c;
-    margin: 0 auto;
+.bloco {
+    background-color: #2b2b2b;
+    width: fit-content;
+    padding: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     position: absolute;
-    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 40px;
 }
-/*botao do cadastro*/
-.Cadas {
-    color: #6b53e9
 
-}
-
-/*customização as colunas de texto: flexibilazaçao, quebra, deixar espaço entre eles*/
-.input-group {
+.blocodois {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blocodois h1 {
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Gabriel Serif', sans-serif;
+    margin-bottom: 30px;
+}
+.blocodois a {
+    color: white;
+}
+.blocodois button {
+    font-family: "Kay Pho Du", serif;
+    font-size: 23px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
 }
 
-/*deixar os label e input em colunas, margem*/
-.input-box {
+.textfield {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
-}
-
-/*ediçao das caixas do input (preenchimento)*/
-.input-box input {
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px rgba(107,83,233,255);
-    font-size: 0.8rem;
-}
-
-.input-box input:hover {
-    background-color: #ac9ef0;
-}
-
-.input-box input:focus-visible {
-    outline: 1px solid #fffb1f;
-}
-
-.input-box label,
-.gender-title h6 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000be;
-}
-
-.input-box input::placeholder {
-    color: #0f2708be;
-}
-
-.gender-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 .8rem;
-    gap:3rem
-}
-
-.gender-input {
-    display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.textfield label {
+    font-family: "Kay Pho Du", serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.textfield input {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 350px;
+    border-radius: 15px;
+    border: none;
 }
 
-.gender-input input {
-    margin-right: 0.35rem;
-}
-
-.gender-input label {
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #000000c0;
-}
 
 
-@media screen and (max-width: 1330px) {
-    .form-image {
-        display: none;
-    }
-    .container {
-        width: 50%;
-    }
-    .form {
-        width: 100%;
-    }
+footer {
+    background-color: blueviolet;
+    height: 120px;
+    text-align: center;
 }
 
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
-    .input-group {
-        flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 10rem;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-    }
-    .gender-inputs {
-        margin-top: 2rem;
-    }
-    .gender-group {
-        flex-direction: column;
-    }
-    .gender-title h6 {
-        margin: 0;
-    }
-    .gender-input {
-        margin-top: 0.5rem;
-    }
-}

@@ -1,115 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
 
-    <title>Criar Conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gabriel-serif" rel="stylesheet">
+
+    <title>Document</title>
 </head>
+<body>
+    <header>
+        <p>wagner eu te amo</p>
+        <img src="imagens/logo branca2.png" alt="">
+    </header>
 
-<body class="container">
+    <main>
+        <script src="cadastro.js"></script>
+        <div class="bloco">
+            <div class="blocodois">
+                <h1>Crie uma conta na Kolekcja</h1>
 
-        <!--div do formulario--> 
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1 class="Cadas">Cadastre-se</h1>
+                <div class="textfield">
+                    <label for="usuario">Digite suas informações a seguir</label>
+                    <input type="text" name="email" placeholder="E-mail">
+                </div> 
+
+                <div class="textfield">
+                    <input type="text" name="cpf_usuario" placeholder="xxx.xxx.xxx-xx">
+                </div> 
+
+                <div class="textfield">
+                    <input type="tel" name="numero_tel" placeholder="(xx) xxxx-xxxx">
+                </div> 
+
+                <div class="textfield">
+                    <input type="text" name="nome_usuario" placeholder="Nome de usuário">
+                </div>
+
+                <div class="textfield">
+                    <input type="text" name="nome_usuario2" placeholder="Ultimo Nome">
+                </div>
+
+                <div class="textfield">
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+
+                <div class="textfield">
+                    <input type="password" name="confirm_senha" placeholder="Confirmar senha">
+                </div>
+
+
+                <div class="gender-group">
+                    <div class="gender-input">
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">Feminino</label>
                     </div>
 
-                    <!--botão pra logar em conta existente (não é possível)-->
-                    <div class="login-button">
-                        <button><a href="#"> Criar Conta</a></button>
+                    <div class="gender-input">
+                        <input id="male" type="radio" name="gender">
+                        <label for="male">Masculino</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="others" type="radio" name="gender">
+                        <label for="others">Outros</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="none" type="radio" name="gender">
+                        <label for="none">Prefiro não dizer</label>
                     </div>
                 </div>
 
-                <!-- input = tag para os campos interagir-->
-                <div class="input-group">
-
-                    <div class="input-box">
-                        <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <!-- type=password é usada para o campo esconder os simbolos que formarãpo a senha-->
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
-                    </div>
-                     
-                    <div class="input-box">
-                        <!--tag para fazer a verificação dupla da sua senha-->
-                        <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
-                    </div>
-
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Gênero</h6>
-                    </div>
-
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
-                            <label for="female">Feminino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
-                            <label for="male">Masculino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Outros</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="none" type="radio" name="gender">
-                            <label for="none">Prefiro não dizer</label>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <script>
-                function cadastro_cliente(){
-                    const nome_client = document.getElementById ('firstname').value;
-                    const ultimonome_client = document.getElementById ('lastname').value;
-                    const emaill = document.getElementById ('email').value;
-                    const numero_cel = document.getElementById ('number').value;
-                    const senha = document.getElementById ('pasword').value;
-                    const verificar_senha = document.getElementById ('confirmPassword').value;
-
-
-                    
-                    document.getElementById('lastname').innerText=ultimonome_client;
-                    document.getElementById('email').innerText=emaill;
-                    document.getElementById('firstname').innerText=nome_client;
-                    document.getElementById('number').innerText=numero_cel;
-                    document.getElementById('password').innerText=senha;
-                    document.getElementById('confirmPasword').innerText=verificar_senha;
-                }
-            </script>
-
+                <a href="">Já tem uma conta? Clique aqui</a>
+                <button class="botaologin">Criar Conta</button>
+            </div>
         </div>
-    </div>
+    </main>
+       <footer>
+         <p>wagner eu te amo</p>
+        </footer>
 </body>
 </html>
