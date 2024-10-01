@@ -35,6 +35,9 @@ main {
     align-items: center;
     flex-direction: column;
 }
+
+
+
 .blocodois h1 {
     font-size: 60px;
     font-weight: normal;
@@ -54,6 +57,13 @@ main {
     border: none;
     background-color: blueviolet;
     color: white;
+    cursor: pointer;
+}
+
+.coluna1 {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
 }
 
 .textfield {

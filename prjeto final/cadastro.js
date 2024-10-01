@@ -1,26 +1,24 @@
 /*parte da kakau */
 function cadastro_cliente(){
-    const nome_client = document.getElementById ('nome usuario').value;
-    const ultimonome_client = document.getElementById ('nome usuario2').value;
-    const emaill = document.getElementById ('email').value;
-    const numero_cel = document.getElementById ('numero_tel').value;
-    const senha = document.getElementById ('senha').value;
-    const verificar_senha = document.getElementById ('confirm_senha').value;
-    const cpf_user = document.getElementById ('cpf_usuario').value;
-
-    alert ('eba')
+    const emaill = document.getElementById ('Email').value;
+    const cpf_user = document.getElementById ('CPF').value;
+    const numero_cel = document.getElementById ('TEL').value;
+    const nome_client = document.getElementById ('NOME1').value;
+    const ultimonome_client = document.getElementById ('NOME2').value;
+    const senha = document.getElementById ('CONFIRMSENHA').value;
+    const verificar_senha = document.getElementById ('CONFIRMSENHA2').value;
 
 
-
-    document.getElementById('nome usuario2').innerText=ultimonome_client;
     document.getElementById('email').innerText=emaill;
-    document.getElementById('nome usuario').innerText=nome_client;
-    document.getElementById('numero_tel').innerText=numero_cel;
-    document.getElementById('senha').innerText=senha;
-    document.getElementById('confirm_senha').innerText=verificar_senha;
-    document.getElementById('cpf_usuario').innerText=cpf_user;
+    document.getElementById('CPF').innerText=cpf_user;
+    document.getElementById('TEL').innerText=numero_cel;
+    document.getElementById('NOME1').innerText=nome_client;
+    document.getElementById('NOME2').innerText=ultimonome_client;
+    document.getElementById('CONFIRMSENHA').innerText=senha;
+    document.getElementById('CONFIRMSENHA2').innerText=verificar_senha;
 
 
+    alert("scrr")
 }
 /*parte da kakau fim */
 
