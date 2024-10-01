@@ -1,6 +1,6 @@
 
 
-function cadastro_cliente(){
+function cadastdo_cliente(){
     const nome_client = document.getElementById ('firstname').value;
     const ultimonome_client = document.getElementById ('lastname').value;
     const emaill = document.getElementById ('email').value;
@@ -24,19 +24,21 @@ function cadastro_cliente(){
 
 
 function postar_produto(){
-    alert('eeeeeeeee')
+    alert('eeeeeeeee');
 
-    const novo_produto = document.getElementById ('nomeProduto').value;
-    const preco_produto = document.getElementById ('precoProduto').value;
-    const dec_produto = document.getElementById ('descricao').value;
+    const novo_produto = document.getElementById('nomeProduto').value;
+    const preco_produto = document.getElementById('precoProduto').value;
+    const dec_produto = document.getElementById('descricao').value;
 
     let tabela = `
-    <tr> ${novo_produto} </tr>;
-    <tr> ${preco_produto} </tr>;
-    <tr> ${dec_produto} </tr>; `;
+    <tr>
+    <td> ${novo_produto} </td>
+    <td> ${preco_produto} </td>
+    <td> ${dec_produto} </td> 
+    </tr>`;
 
 
-    document.getElementById('').innerHTML=tabela
+    document.querySelector('#tabela tbody').innerHTML = tabela;
     
         
         
