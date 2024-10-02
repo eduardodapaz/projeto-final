@@ -1,6 +1,4 @@
-
-
-f/*parte da kakau */
+/*parte da kakau */
 function cadastro_cliente(){
     const emaill = document.getElementById ('Email').value;
     const cpf_user = document.getElementById ('CPF').value;
@@ -11,13 +9,13 @@ function cadastro_cliente(){
     const verificar_senha = document.getElementById ('CONFIRMSENHA2').value;
 
 
-    document.getElementById('email').innerText=emaill;
-    document.getElementById('CPF').innerText=cpf_user;
-    document.getElementById('TEL').innerText=numero_cel;
-    document.getElementById('NOME1').innerText=nome_client;
-    document.getElementById('NOME2').innerText=ultimonome_client;
-    document.getElementById('CONFIRMSENHA').innerText=senha;
-    document.getElementById('CONFIRMSENHA2').innerText=verificar_senha;
+    document.getElementById('email').innerHTML=emaill;
+    document.getElementById('CPF').innerHTML=cpf_user;
+    document.getElementById('TEL').innerHTML=numero_cel;
+    document.getElementById('NOME1').innerHTML=nome_client;
+    document.getElementById('NOME2').innerHTML=ultimonome_client;
+    document.getElementById('CONFIRMSENHA').innerHTML=senha;
+    document.getElementById('CONFIRMSENHA2').innerHTML=verificar_senha;
 
 
     alert("scrr")
