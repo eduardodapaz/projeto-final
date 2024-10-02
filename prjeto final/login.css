@@ -80,7 +80,15 @@
 }
 #login .blocodois a {
     color: white;
+    text-decoration: none;
 }
+#login .blocodois .esqueceu {
+    margin-bottom: 6px;
+}
+#login .blocodois .cadastro {
+    color: blueviolet;
+}
+
 #login .blocodois button {
     font-family: "Kay Pho Du", serif;
     font-size: 23px;
@@ -91,6 +99,7 @@
     border: none;
     background-color: blueviolet;
     color: white;
+    cursor: pointer;
 }
 
 #login .textfield {
@@ -119,8 +128,29 @@
 
 #login footer {
     background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
-    height: 120px;
+    height: 170px;
     text-align: center;
+
+    position: relative;
+}
+
+#login footer .pe {
+    color: white;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#login footer .grande {
+    font-size: 20px;
+}
+
+#login footer a {
+    text-decoration: none;
+    color: white;
 }
 
 /*-----------------------------------------FOOTER-----------------------------------------*/
