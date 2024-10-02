@@ -1,4 +1,6 @@
-/*parte da kakau */
+
+
+f/*parte da kakau */
 function cadastro_cliente(){
     const emaill = document.getElementById ('Email').value;
     const cpf_user = document.getElementById ('CPF').value;
@@ -21,7 +23,6 @@ function cadastro_cliente(){
     alert("scrr")
 }
 /*parte da kakau fim */
-
 
 function postar_produto(){
     alert('eeeeeeeee');

@@ -187,18 +187,44 @@ section{
     box-sizing: border-box;
     padding: 15px;
     width: 350px;
-    border-radius: 15px;
+   
     background: transparent;
-    border: none;
+    border: 0;
+    border-bottom: 2px white solid;
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px ;
     color: #ffff;
 }
-#cp table{
-    background-color: antiquewhite;
-    border: #444444 1px solid;
-}
-#cp  th{
-    border: #444444 1px solid;
-}
+#cp table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #cp th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #cp th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #cp  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  #cp tr:hover {
+    background-color: #ccc;
+  }
+  #cp button{
+    border-radius: 15px;
+    background-color: black;
+    color: #ffff;
+    margin: 15px;
+    padding: 15px;
+      }
