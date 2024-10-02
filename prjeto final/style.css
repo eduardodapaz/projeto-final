@@ -95,6 +95,7 @@ width: 30px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
 
 }
+
 .links img{
         height: 50px;
         width: 50px;
@@ -104,12 +105,17 @@ width: 30px;
         box-shadow: 3px 3px 3px #444444;
       
 }
-
+.barbie{
+    filter: grayscale(100%);
+}
 .links a{
 
     color: black
 }
 
+.atalhos :hover{
+    filter: invert(100%);
+}
 main img{
     /* aqui  comfigurase as imagems dos produtos */
     box-sizing: border-box;
@@ -128,7 +134,7 @@ section{
 }
 .filho{
     display:flexbox;
-    background-color: rgb(236, 248, 253);
+    background-color: rgb(255, 255, 255);
     width: 300px;
     height: 360px;
     text-align: center;
@@ -228,3 +234,4 @@ section{
     margin: 15px;
     padding: 15px;
       }
+
