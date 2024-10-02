@@ -15,20 +15,24 @@
     <title>Cadastro | Kolekcja</title>
 </head>
 <body>
-    <!--imh no header-->
+    <!--img no header-->
     <header class="hedo">
         <img src="imagens/logo branca.png" alt="">
     </header>
+
     <!--parte principal do site-->
+
     <main>
-    <!--link do site-->
+    <!--linkando o js-->
         <script src="cadastro.js"></script>
+
         <!--div's bloco 1 e a seguir o bloco dois onde esta os label-->
         <div class="bloco">
             <div class="blocodois">
                 <h1>Cadastre-se na Kolekcja</h1>
 
-                <!--divs com os label-->
+                <!--divs com os label, contendo input para digito do usuario, id para usar no js, e place holder para aparece lá no site pro usuario-->
+                <!-- tmb tem o msm class para todos serem editados de uma vez-->
                 <div class="textfield">
                     <label for="usuario">Digite suas informações a seguir</label>
                     <input id="Email" type="text" name="email" placeholder="E-mail">
@@ -57,24 +61,26 @@
                 <div class="textfield">
                     <input id="CONFIRMSENHA2" type="password" name="confirm_senha" placeholder="Confirmar senha">
                 </div>
+                <!--fim dos campós para criaçao do cadastro-->
 
-                <!--links-->
+                <!--link para acessar o login-->
                 <a href="login.html">Já tem uma conta? Clique aqui</a>
+
+                <!--botao para crair a conta, e d bonus acessar o js e salvar as informaçoes dos input's-->
                 <button onclick="cadastro_cliente()" class="botaoL">Criar Conta</button>
 
+                <!--nesses paragrafos(p) tem um span que acessa o js e gaurda as informaçoes dos input-->
                 <p> informaçoes guardadas <span id="Email1"></span></p>
                 <p> informaçoes guardadas <span id="CPF1"></span></p>
                 <p> informaçoes guardadas <span id="TEL1"></span></p>
                 <p> informaçoes guardadas <span id="NOME11"></span></p>
                 <p> informaçoes guardadas <span id="NOME21"></span></p>
                 <p> informaçoes guardadas <span id="CONFIRMSENHA1"></span></p>
-                <p> informaçoes guardadas <span id="CONFIRMSENHA21"></span></p>
-                
+                <p> informaçoes guardadas <span id="CONFIRMSENHA21"></span></p>      
         </div>
-
+        <!--fim da div com os input-->
     </main>
-       <footer class="hedo">
-
-        </footer>
+    <!--fim da parte preuncipal e footer para deixa bonitinho o site :3-->
+       <footer class="hedo"> </footer>
 </body>
 </html>
