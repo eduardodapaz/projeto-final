@@ -9,7 +9,7 @@
 </head>
 <body id="cp">  
 
-   <div class="postarproduto">
+   <div class="postarproduto"> <!--container com od input-->
     <h1 class="tituloproduto">Cadastrar Novo  Produto</h1>
     <form id="novo_produto">
         <label for="nomeProduto">Nome do Produto:</label>
@@ -21,12 +21,13 @@
         <label for="descproduto">descriçao do Produto:</label>
         <input type="text" id="descricao" name="descproduto"><br><br>
 
-        <button type="button" onclick=" ">Cadastrar Produto</button>
+        <button type="button" onclick=" postar_produto()">Cadastrar Produto</button> <!--botao com a funcao do js-->
     </form>
 
    </div>
 
    <table id="tabela">
+    <!--tabela onde serao exibidas as informacoes-->
         <thead>
             <tr>
                 <th>produto</th>
