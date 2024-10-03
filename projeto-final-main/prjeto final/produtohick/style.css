@@ -1,4 +1,4 @@
-*{
+*{ /*formataçao do site*/
 box-sizing: border-box;
 margin: 0;
 padding: 0%;
@@ -6,7 +6,7 @@ text-decoration: none;
 
 }
 
-#site_principal{
+#site_principal{ /*grid do site principal*/
     display: grid;
     grid-template-areas: 
     'cc cc cc '
@@ -17,7 +17,7 @@ text-decoration: none;
 
 
 }
-
+/*nomes usados no grid*/
 .cabesalho{
     grid-area: cc;
     background: rgb(145,34,195);
@@ -60,7 +60,7 @@ width: 30px;
     height: 60px;
     
 }
-
+/*configuracoes na barra de pesquisa*/
 .busca{
     background: url(imagens/lupabranca.png)  no-repeat center left;
     padding: 5px;
@@ -85,7 +85,7 @@ width: 30px;
    outline:none;
    border-bottom: solid 1px #1b169f;
 }
-
+/*confguracoes do navegador*/
 .navegador ul{
     display: flex;
     justify-content: center;
@@ -115,7 +115,8 @@ width: 30px;
 
 .atalhos :hover{
     filter: invert(100%);
-}
+} 
+/*configuracoes do main */
 main img{
     /* aqui  comfigurase as imagems dos produtos */
     box-sizing: border-box;
@@ -132,6 +133,7 @@ section{
   display: flex;
     justify-content: space-around; 
 }
+/*configuracoes produto*/
 .filho{
     display:flexbox;
     background-color: rgb(255, 255, 255);
@@ -179,14 +181,14 @@ section{
     color: azure;
 }
 /*-----------------------------------------*/
-
+/*configuracoes do cadastro produto*/
 #cp{
     background-color: rgba(56, 56, 56, 0.418);
     font-family: 'Gabriel Serif', sans-serif;
 }
 
 .postarproduto{
-    border: #444444 1px solid;
+    border: #444749 1px solid;
 }
 
 #cp input {
