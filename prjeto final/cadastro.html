@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt br" id="login">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtohick/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gabriel-serif" rel="stylesheet">
+
+    <!--Titulo la na aba do site-->
+    <title>Cadastro | Kolekcja</title>
+</head>
+<body>
+    <!--img no header-->
+    <header class="hedo">
+        <img src="imagens/logo branca.png" alt="">
+    </header>
+
+    <!--parte principal do site-->
+
+    <main>
+    <!--linkando o js-->
+        <script src="cadastro.js"></script>
+
+        <!--div's bloco 1 e a seguir o bloco dois onde esta os label-->
+        <div class="bloco">
+            <div class="blocodois">
+                <h1>Cadastre-se na Kolekcja</h1>
+
+                <!--divs com os label, contendo input para digito do usuario, id para usar no js, e place holder para aparece lá no site pro usuario-->
+                <!-- tmb tem o msm class para todos serem editados de uma vez-->
+                <div class="textfield">
+                    <label for="usuario">Digite suas informações a seguir</label>
+                    <input id="Email" type="text" name="email" placeholder="E-mail">
+                </div> 
+
+                <div class="textfield">
+                    <input id="CPF" type="text" name="cpf_usuario" placeholder="CPF">
+                </div> 
+
+                <div class="textfield">
+                    <input id="TEL" type="tel" name="numero_tel" placeholder="Número de Telefone">
+                </div> 
+
+                <div class="textfield">
+                    <input id="NOME1" type="text" name="nome_usuario" placeholder="Primeiro Nome">
+                </div>
+
+                <div class="textfield">
+                    <input id="NOME2" type="text" name="nome_usuario2" placeholder="Último Nome">
+                </div>
+
+                <div class="textfield">
+                    <input id="CONFIRMSENHA" type="password" name="senha" placeholder="Senha">
+                </div>
+
+                <div class="textfield">
+                    <input id="CONFIRMSENHA2" type="password" name="confirm_senha" placeholder="Confirmar senha">
+                </div>
+                <!--fim dos campós para criaçao do cadastro-->
+
+                <!--link para acessar o login-->
+                <a href="login.html">Já tem uma conta? Clique aqui</a>
+
+                <!--botao para crair a conta, e d bonus acessar o js e salvar as informaçoes dos input's-->
+                <button onclick="cadastro_cliente()" class="botaoL">Criar Conta</button>
+
+                <!--nesses paragrafos(p) tem um span que acessa o js e gaurda as informaçoes dos input-->
+                <p> informaçoes guardadas <span id="Email1"></span></p>
+                <p> informaçoes guardadas <span id="CPF1"></span></p>
+                <p> informaçoes guardadas <span id="TEL1"></span></p>
+                <p> informaçoes guardadas <span id="NOME11"></span></p>
+                <p> informaçoes guardadas <span id="NOME21"></span></p>
+                <p> informaçoes guardadas <span id="CONFIRMSENHA1"></span></p>
+                <p> informaçoes guardadas <span id="CONFIRMSENHA21"></span></p>      
+        </div>
+        <!--fim da div com os input-->
+    </main>
+    <!--fim da parte preuncipal e footer para deixa bonitinho o site :3-->
+       <footer class="hedo"> </footer>
+</body>
+</html>
