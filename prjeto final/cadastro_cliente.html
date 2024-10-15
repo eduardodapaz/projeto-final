@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="cad_cliente">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtohick/style.css">
+    <title>Cadastro Cliente | Kolekcja</title>
+</head>
+<body>
+    <script src="cadastro.js"></script>
+
+    <header>
+        <h1>Sistema Kolekcja - Artigos Colecionáveis</h1>
+        <h1>Voltar ao Início</h1>
+    </header>
+
+    <main>
+        <div class="box_form">
+            <h1 class="titulo">Cadastro do Cliente</h1>
+            <form class="formulario">
+                <label for="nomeCliente">Nome Completo do Cliente:</label>
+                <input type="text" name="nomeCliente" id="nome_cliente">
+
+                <label for="cpfCliente">CPF do Cliente:</label>
+                <input type="text" name="cpfCliente" id="cpf_cliente">
+
+                <label for="endCliente">Endereço do Cliente</label>
+                <input type="text" name="endCliente" id="end_cliente">
+
+                <label for="dtNascCliente">Data de Nascimento do Cliente:</label>
+                <input type="date" name="dtNascCliente" id="dtNasc_cliente">
+
+                <label for="emailCliente">E-Mail do Cliente:</label>
+                <input type="text" name="emailCliente" id="email_cliente">
+
+                <label for="telefCliente">Telefone do Cliente:</label>
+                <input type="number" name="telefCliente" id="telef_cliente">
+
+                <label for="sexoCliente">Sexo do Cliente:</label>
+                <input type="text" name="sexoCliente" id="sexo_cliente">
+
+                <button type="button" onclick="cadastrarProduto()">Cadastrar Cliente</button>
+            </form>
+        </div>
+
+        <table class="tabela_clientes">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Endereço</th>
+                    <th>Data Nasc.</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Sexo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>sjdhfgiregiufehv</p>
+    </footer>
+</body>
+</html>
