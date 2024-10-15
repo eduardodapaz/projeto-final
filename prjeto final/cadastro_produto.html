@@ -10,16 +10,34 @@
 <body id="cp">  
 
    <div class="postarproduto"> <!--container com od input-->
+    
     <h1 class="tituloproduto">Cadastrar Novo  Produto</h1>
+
     <form id="novo_produto">
+
         <label for="nomeProduto">Nome do Produto:</label>
         <input type="text" id="nomeProduto" name="nomeProduto"><br><br> 
 
         <label for="precoProduto">Preço do Produto:</label>
         <input type="number" id="precoProduto" name="precoProduto"><br><br>
 
-        <label for="descricao">descriçao do Produto:</label>
+        <label for="descricao">Descrição do Produto:</label>
         <input type="text" id="descricao" name="descproduto"><br><br>
+
+        <label for="estoqueProduto">Estoque do Produto:</label>
+        <input type="number" id="estoquee" name="estoqproduto"><br><br>
+
+        <label for="Dimensões">Dimensões do Produto:</label>
+        <input type="text" id="dimensao" name="dimenproduto"><br><br>
+
+        <label for="FabricanteProduto">Fabricante do Produto:</label>
+        <input type="text" id="fabricante" name="fabricante_do_produto"><br><br>
+
+        <label for="CategoriaProduto">Categoria do Produto:</label>
+        <input type="text" id="categoria" name="CATEGORIAproduto"><br><br>
+
+        <label for="CodigoProduto">Código de barras do Produto:</label>
+        <input type="number" id="IDcodigo" name="codproduto"><br><br>
 
         <button type="button" onclick=" postar_produto()">Cadastrar Produto</button> <!--botao com a funcao do js-->
     </form>
@@ -30,9 +48,14 @@
     <!--tabela onde serao exibidas as informacoes-->
         <thead>
             <tr>
-                <th>produto</th>
-                <th>preço</th>
-                <th>descriçao</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+                <th>Estoque</th>
+                <th>Dimensões</th>
+                <th>Fabricante</th>
+                <th>Categoria</th>
+                <th>CodBarras</th>
             </tr>
 
         </thead>

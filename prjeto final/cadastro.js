@@ -24,17 +24,26 @@ function cadastro_cliente(){
 /*parte da kakau fim */
 
 function postar_produto(){
-    alert('eeeeeeeee');
 
     const novo_produto = document.getElementById('nomeProduto').value;
     const preco_produto = document.getElementById('precoProduto').value;
     const dec_produto = document.getElementById('descricao').value;
+    const estoque_produto = document.getElementById('estoquee').value;
+    const dimen_produto = document.getElementById('dimensao').value;
+    const fabricante_produto = document.getElementById('fabricante').value;
+    const categoria_produto = document.getElementById('categoria').value;
+    const cod_produto = document.getElementById('IDcodigo').value;
 
-    let tabela = `
+    let tabela =`
     <tr>
     <td> ${novo_produto} </td>
     <td> ${preco_produto} </td>
-    <td> ${dec_produto} </td> 
+    <td> ${dec_produto} </td>
+    <td> ${estoque_produto} </td> 
+    <td> ${dimen_produto} </td> 
+    <td> ${fabricante_produto} </td>
+    <td> ${categoria_produto} </td> 
+    <td> ${cod_produto} </td> 
     </tr>`;
 
 
