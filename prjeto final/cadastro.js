@@ -21,6 +21,25 @@ function cadastro_cliente(){
     document.getElementById('CONFIRMSENHA1').innerHTML=senha;
     document.getElementById('CONFIRMSENHA21').innerHTML=verificar_senha;
 }
+
+function cad_forno(){
+    const nome_empresa  = document.getElementById('nome').value;
+    const CNPJ  = document.getElementById('CNPJ').value;
+    const TELEFONE = document.getElementById('TEL').value;
+    const EMAIL_F  = document.getElementById('email.empresa').value;
+    const RAZAO_S  = document.getElementById('NOME2').value;
+
+    let tabela =`
+    <tr>
+        <td> ${nome_empresa} </td>
+        <td> ${CNPJ} </td>
+        <td> ${TELEFONE} </td>
+        <td> ${EMAIL_F} </td>
+        <td> ${RAZAO_S} </td>
+    </tr>`;
+
+    document.querySelector('#tabela tbody').innerHTML = tabela;
+}
 /*parte da kakau fim */
 
 function postar_produto(){

@@ -154,3 +154,21 @@
 }
 
 /*-----------------------------------------FOOTER-----------------------------------------*/
+
+#oio{
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+}
+
+#ic{
+    width: 187px;
+ 
+}
+
+.pp{
+    color: antiquewhite;
+    padding: 30px;
+}
+
+.oo{
+    width: 77px;
+}
