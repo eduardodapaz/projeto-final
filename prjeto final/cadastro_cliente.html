@@ -1,50 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br" id="cad_cliente">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="produtohick/style.css">
-    <title>Cadastro Cliente | Kolekcja</title>
-</head>
-<body>
-    <script src="cadastro.js"></script>
+    <link rel="stylesheet" href="cadastro.css">
 
-    <header>
-        <h1>Sistema Kolekcja - Artigos Colecionáveis</h1>
-        <h1>Voltar ao Início</h1>
-    </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="produtohick/style.css" rel="stylesheet">
+    <title>Cadastro | Cliente</title>
+</head>
+<body id="cp">
+        <script src="cadastro.js"></script>
 
     <main>
         <div class="box_form">
-            <h1 class="titulo">Cadastro do Cliente</h1>
+            <h1 class="tituloproduto">Cadastro do Cliente</h1>
             <form class="formulario">
                 <label for="nomeCliente">Nome Completo do Cliente:</label>
-                <input type="text" name="nomeCliente" id="nome_cliente">
+                <input type="text" name="nomeCliente" id="nome_cliente"> <br><br>
 
                 <label for="cpfCliente">CPF do Cliente:</label>
-                <input type="text" name="cpfCliente" id="cpf_cliente">
+                <input type="text" name="cpfCliente" id="cpf_cliente"> <br><br>
 
                 <label for="endCliente">Endereço do Cliente</label>
-                <input type="text" name="endCliente" id="end_cliente">
+                <input type="text" name="endCliente" id="end_cliente"> <br><br>
 
                 <label for="dtNascCliente">Data de Nascimento do Cliente:</label>
-                <input type="date" name="dtNascCliente" id="dtNasc_cliente">
+                <input type="date" name="dtNascCliente" id="dtNasc_cliente"> <br><br>
 
                 <label for="emailCliente">E-Mail do Cliente:</label>
-                <input type="text" name="emailCliente" id="email_cliente">
+                <input type="text" name="emailCliente" id="email_cliente"> <br><br>
 
                 <label for="telefCliente">Telefone do Cliente:</label>
-                <input type="number" name="telefCliente" id="telef_cliente">
+                <input type="number" name="telefCliente" id="telef_cliente"> <br><br>
 
                 <label for="sexoCliente">Sexo do Cliente:</label>
-                <input type="text" name="sexoCliente" id="sexo_cliente">
+                <input type="text" name="sexoCliente" id="sexo_cliente"> <br><br>
 
-                <button type="button" onclick="cadastrarProduto()">Cadastrar Cliente</button>
+                <button type="button" onclick="cadastrarProduto()">Cadastrar Cliente</button> <br><br><br>
             </form>
         </div>
 
-        <table class="tabela_clientes">
+        <table class="tabela">
             <thead>
                 <tr>
                     <th>Nome</th>
