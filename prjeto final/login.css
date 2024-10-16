@@ -172,3 +172,96 @@
 .oo{
     width: 77px;
 }
+
+/*-------------------------TELA PRINCIPAL DO SISTEMA--------------------------------------------*/
+:root{
+    --white: #fff;
+    --dark1: #1f1f1f;
+    --dark2: #feffbc;
+    --cyan1: rgb(206, 160, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--dark1);
+    background-size: 400%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.1rem;
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+section{
+    padding: 2rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: 650px;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: var(--white);
+}
+
+strong{
+    color: var(--cyan1);
+}
+
+:is(.second-section, .fourth-section){
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.second-section{
+    background-color: #feffbc;
+}
+
+.title{
+    color: rgb(0, 0, 0);
+}
+
+.second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+
+/*--------------------------------------------------------fim----------------------------------------------------------------------*/
